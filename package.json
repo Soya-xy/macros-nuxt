@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "nuxt": "^3.15.1",
@@ -16,8 +17,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "@vue-macros/nuxt": "^1.12.12",
     "@vue-macros/volar": "^0.30.9",
     "typescript": "^5.7.3",
-    "unplugin-vue-macros": "^2.13.7"
+    "unplugin-vue-macros": "^2.13.7",
+    "vue-tsc": "^2.2.0"
   }
 }

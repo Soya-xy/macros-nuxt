@@ -4,10 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@vue-macros/nuxt"],
   macros: {
+    setupSFC: true,
+    betterDefine: false,
     defineProp: {
-      edition: "johnsonEdition"
+      edition: 'johnsonEdition',
     },
-
-    defineEmit: true
+  },
+  typescript: {
+    typeCheck: true
   }
 })
